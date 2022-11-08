@@ -94,5 +94,13 @@ function createDirs() {
         }
 
     }
+    let dir = `./uploads/temp`;
+    if (!fs.existsSync(dir))
+        fs.mkdirSync(dir, { recursive: true })
+    let dir2 = `./uploads/temp2`;
+    if (!fs.existsSync(dir2))
+        fs.mkdirSync(dir2, { recursive: true })
+
+
 }
-// createDirs();
+createDirs();
